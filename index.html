@@ -5,29 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body class="debug">
+<body>
     <main id="site_main">
         <div class="d_flex">
-            <div class="col_2 flex">
-                <div class="list"></div>
+            <!--playlist-->
+            <div class="sidebar  flex">
+                <div class="list">
+                    <div class="logo d_flex">
+                        <img src="./assets/img/logo.svg" alt="">
+                    </div>
+                    <div class="icons">
+                        <div class="home">
+                            <i class="fa-solid fa-house"></i>
+                            <a href="#">Home</a>
+                        </div>
+                        <div class="near">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <a href="#">Cerca</a>
+                        </div>
+                        <div class="shelf">
+                            <i class="fa-solid fa-lines-leaning"></i>
+                            <a href="#">La tua libreria</a>
+                        </div>
+                        <p>PLAYLIST</p>
+                        <div class="playlist">
+                            <div class="add d_flex">
+                                <i class="fa-solid fa-plus"></i> 
+                            </div>
+                            <p><a href="#">Crea Playlist</a></p>
+                        </div>
+                        <div class="lists">
+                            <ul>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <div class="account"></div>
             </div>
             <div class="col_10">
+                <!--albums-->
                 <div class="header_fix">
                     <div class="btn"><a href="#" class="btn_dark">EFFETTUA L'UPGRADE</a></div>
                 </div>
                 <div class="all_main">
                     <div class="menu">
-                        <!--<ul>
-                            <li>IN EVIDENZA</li>
-                            <li>PODCAST</li>
-                            <li>CLASSIFICHE</li>
-                            <li>GENERI E MOOD</li>
-                            <li>NUOVE USCITE</li>
-                            <li>SCOPRI</li>
-                        </ul>-->
+                        <ul>
+                            <li><a href="#">IN EVIDENZA</a></li>
+                            <li><a href="#">PODCAST</a></li>
+                            <li><a href="#">CLASSIFICHE</a></li>
+                            <li><a href="#">GENERI E MOOD</a></li>
+                            <li><a href="#">NUOVE USCITE</a></li>
+                            <li><a href="#">SCOPRI</a></li>
+                        </ul>    
+                    </div>
+                    <div class="container">
+                        <h2>Recently played</h2>
+                        <div class="row">
+                            <div class="col_2">
+                                <div class="image_album">
+                                    <img src="./assets/img/metal_lifting.jpg" alt="">
+                                </div>
+                                <div class="name_song"></div>
+                                <div class="type"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
