@@ -129,6 +129,31 @@ main .d_flex .sidebar {
 .sidebar .icons .lists li a{
     color: #7D7F84;
 }
+
+.sidebar .account .download{
+    padding-left: 2rem;
+    color: #7D7F84;
+}
+.sidebar .account .download a{
+    color: #7D7F84;
+}
+.sidebar .account .line{
+    padding: 0.5rem 0;
+    margin: auto;
+    width: 80%;
+}
+.sidebar .account .user{
+    padding: 0.5rem 0 0.5rem 2rem;
+    color: #7D7F84;
+    align-items: center;
+}
+.sidebar .account .user a{
+    color: white;
+}
+.sidebar .account .user i{
+    font-size: 25px;
+    padding-right: 5px;
+}
 main .d_flex .col_10{
     height: calc(100vh - 80px);
     background-color: #141922;
