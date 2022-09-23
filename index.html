@@ -5,99 +5,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!--font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <main id="site_main">
-        <div class="d_flex">
-            <!--playlist-->
-            <div class="sidebar  flex">
-                <div class="list">
-                    <div class="logo d_flex">
-                        <img src="./assets/img/logo.svg" alt="">
+    <div class="wrapper">
+        <div class="top">
+            <div class="sidebar">
+                <div class="sidebar_top">
+                    <div class="sidebar_logo">
+                        <img class="logo_mobile" src="./assets/img/logo-small.svg" alt="">
+                        <img class="logo" src="./assets/img/logo.svg" alt="">
                     </div>
-                    <div class="icons">
-                        <div class="home">
-                            <i class="fa-solid fa-house"></i>
-                            <a href="#">Home</a>
-                        </div>
-                        <div class="near">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <a href="#">Cerca</a>
-                        </div>
-                        <div class="shelf">
-                            <i class="fa-solid fa-lines-leaning"></i>
-                            <a href="#">La tua libreria</a>
-                        </div>
-                        <p>PLAYLIST</p>
-                        <div class="playlist">
-                            <div class="add d_flex">
-                                <i class="fa-solid fa-plus"></i> 
+                    <ul class="menu">
+                        <li class="d_flex home">
+                            <img src="./assets/img/home.svg" alt="">
+                            <span>Home</span>
+                        </li>
+                        <li class="d_flex">
+                            <img src="./assets/img/search.svg" alt="">
+                            <span>Cerca</span>
+                        </li>
+                        <li class="d_flex">
+                            <img src="./assets/img/libreria.svg" alt="">
+                            <span>La tua libreria</span>
+                        </li>
+                    </ul>
+                    <div class="playlist_wrapper">
+                        <h3>PLAYLIST</h3>
+                        <div class="playlist_add">
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i>
                             </div>
-                            <p><a href="#">Crea Playlist</a></p>
+                            <span>Crea Playlist</span>
                         </div>
-                        <div class="lists">
-                            <ul>
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>
-                            </ul>
-                        </div>
+                        <ul class="playlist">
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="account">
-                    <div class="download">
-                        <i class="fa-regular fa-circle-down"></i> 
-                        <a href="#">Installa app </a> 
-                    </div>
-                    <div class="line">
-                        <hr>
-                    </div>
-                    <div class="user d_flex">
-                        <i class="fa-solid fa-circle-user"></i>
-                        <a href="#">John Doe</a> 
-                    </div>
+                <div class="sidebar_bottom">
+                    <ul>
+                        <li class="d_flex">
+                            <img src="./assets/img/download.svg" alt="">
+                            <span>Install app</span>
+                        </li>
+                        <li class="line"><hr></li>
+                        <li class="d_flex">
+                            <img src="./assets/img/profile.svg" alt="">
+                            <span><h4>John Doe</h4> </span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="col_10">
-                <!--albums-->
-                <div class="header_fix">
+            <!-- /.side_bar -->
+            <div class="content">
+                <div class="upgrade">
                     <div class="btn"><a href="#" class="btn_dark">EFFETTUA L'UPGRADE</a></div>
                 </div>
-                <div class="all_main">
-                    <div class="menu">
-                        <ul>
-                            <li><a href="#">IN EVIDENZA</a></li>
-                            <li><a href="#">PODCAST</a></li>
-                            <li><a href="#">CLASSIFICHE</a></li>
-                            <li><a href="#">GENERI E MOOD</a></li>
-                            <li><a href="#">NUOVE USCITE</a></li>
-                            <li><a href="#">SCOPRI</a></li>
-                        </ul>    
-                    </div>
+                <div class="music">
                     <div class="container">
-                        <h2>Recently played</h2>
                         <div class="row">
-                            <div class="col_2">
-                                <div class="image_album">
-                                    <img src="./assets/img/metal_lifting.jpg" alt="">
-                                </div>
-                                <div class="name_song"></div>
-                                <div class="type"></div>
-                            </div>
+                            <div class="album"></div>
+                            <div class="album"></div>
+                            <div class="album"></div>
+                            <div class="album"></div>
+                            <div class="album"></div>
+                            <div class="album"></div>
+                        </div>
+                        <div class="row">
+                            <div class="album"></div>
+                            <div class="album"></div>
+                        </div>
+                        <div class="row">
+                            <div class="album"></div>
+                            <div class="album"></div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- /.content -->
         </div>
-    </main>
-    <!-- /#site_main -->
-    <footer id="site_footer"></footer>
-    <!-- /#site_footer -->
+        <!--/.top-->
+        <div class="player"></div>
+        <!--/.player-->
+    </div>
+        <!--/.wrapper-->
 </body>
 </html>

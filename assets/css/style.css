@@ -3,196 +3,228 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     font-family: 'Montserrat', sans-serif;
 }
 
+
 /*Utilities*/
+.wrapper{
+    height: 100vh;
+}
 .d_flex{
     display: flex;
-}
-.flex{
-    display: flex;
-    flex-direction:column ;
-    justify-content: space-between;
-}
-.row{
-    display: flex;
-}
-
-
-.sidebar {
-    width: calc(100% / 12 * 2);
-}
-.col_2{
-    width: calc(100% / 12 * 2);
-}
-.col_10{
-    width: calc(100% / 12 * 10);
 }
 a{
     text-decoration: none;
 }
-img{
-    max-width: 95%;
-}
-.container{
-    padding-top: 2rem;
-    width: 95%;
-    margin: auto;
-    color: white;
-}
 
-/*debug*/
-/*.list{
-    width: 100%;
-    height: 200px;
-    background-color: aquamarine;
+/* top */
+.top{
+    height: calc(100vh - 80px);
+    display: flex;
 }
-.account{
-    width: 100%;
-    height: 50px;
-    background-color: aquamarine;
-}*/
+/* /.top */
 
-/*Main*/
-
-main .d_flex .sidebar {
-    background-color: #000000;
+/* sidebar */
+.sidebar{
+    width: 60px;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.sidebar .logo{
-    padding: 2rem;
-    width: 70%;
+/* sidebar_top */
+.sidebar_top{
+    color: #6D6D6D;
 }
-.sidebar .icons .home{
-    color: white;
-    padding-left: 2rem ;
-    padding-top:5px;
-    padding-bottom:5px;
-    border-left: 3px solid #ADFF2F;
+.sidebar_logo{
+    padding: 1rem 1.5rem;
 }
-.sidebar .icons .home a{
-    color: white;
+.sidebar_logo .logo_mobile{
+    width: 28px;
 }
-.sidebar .icons .near{
-    color: #7D7F84;
-    padding-top: 1rem;
-    padding-left: 2.2rem ;
+.sidebar_logo .logo{
+    width: 138px;
+    display: none;
 }
-.sidebar .icons .near a{
-    color: #7D7F84;
-}
-.sidebar .icons .shelf{
-    color: #7D7F84;
-    padding-top: 1rem;
-    padding-left: 2rem;
-}
-.sidebar .icons .shelf a{
-    color: #7D7F84;
-}
-.icons p {
-    padding-top: 1rem;
-    padding-left: 2rem;
-}
-.icons p a{
-    color: white;
-}
-.sidebar .icons .playlist{
-    padding-left: 2rem;
-    padding-top: 1rem;
-}
-.sidebar .icons .playlist .add{
-    width: 30px;
-    height: 30px;
-    font-size: 18px;
-    background-color: #A3A3A3;
-    justify-content: center;
-    align-items: center;
-}
-.sidebar .icons .playlist p{
-    color: #7D7F84;
-    position: relative;
-    bottom: 40px;
-    left: 5px;
-}
-.sidebar .icons .lists{
-    padding-left: 2rem;
-    color: #7D7F84;
-}
-.sidebar .icons .lists ul{
+ul .menu{
     list-style: none;
 }
-.sidebar .icons .lists li{
-    padding-bottom: 1rem;
+.menu img{
+    width: 20px;
 }
-.sidebar .icons .lists li a{
-    color: #7D7F84;
-}
-
-.sidebar .account .download{
-    padding-left: 2rem;
-    color: #7D7F84;
-}
-.sidebar .account .download a{
-    color: #7D7F84;
-}
-.sidebar .account .line{
-    padding: 0.5rem 0;
-    margin: auto;
-    width: 80%;
-}
-.sidebar .account .user{
-    padding: 0.5rem 0 0.5rem 2rem;
-    color: #7D7F84;
+.menu li{
     align-items: center;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
 }
-.sidebar .account .user a{
+.home{
     color: white;
 }
-.sidebar .account .user i{
-    font-size: 25px;
-    padding-right: 5px;
+.menu span{
+    display: none;
 }
-main .d_flex .col_10{
-    height: calc(100vh - 80px);
-    background-color: #141922;
-    overflow: hidden;
+.playlist_wrapper{
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    display: none;
+}
+.playlist_wrapper h3{
+    color: white;
+}
+.playlist_add{
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0 1rem 0;
+}
+.playlist_add span{
+    padding-left: 10px;
+}
+.playlist_add .icon{
+    width: 37px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A3A3A3;
+}
+.playlist_add .icon i{
+    color: black;
+    font-size: 18px;
+}
+.playlist{
+    list-style: none;
+}
+.playlist li{
+    padding-bottom: 1rem;
+}
+/* /.sidebar_top */
+
+/* sidebar_bottom */
+.sidebar_bottom{
+    padding-left: 1.5rem;
+    color: #6D6D6D;
+}
+.sidebar_bottom ul{
+    list-style: none;
+}
+.sidebar_bottom ul li{
+    padding-bottom: 0.5rem;
+}
+.sidebar_bottom img{
+    width: 20px;
+}
+hr{
+    height: 1px;
+    background-color: #717171;
+    padding-right: 0.5rem;
+    border: none;
+    width: 80%;
+    display: none;
+}  
+.sidebar_bottom li h4{
+    color: white;
+} 
+.sidebar_bottom span{
+    display: none;
 }
 
-main .header_fix{
-    width: 100%;
-    height: 80px;
-    background-color: #080B12;
-    position: sticky;
-    top: 0;
+/* /.sidebar_bottom */
+/* /.sidebar */
+
+/* content */
+.content{
+    width: calc(100% - 70px);
+    height: 100%;
+    background-color: #141922;
+    
 }
-main .header_fix .btn{
+/* upgrade */
+.upgrade{
+    height: 70px;
+    background-color: #080B12;
+    text-align: end;
+    color: white;
+}
+.btn{
     padding-top: 1.5rem;
     text-align: end;
 }
-main .header_fix .btn .btn_dark{
+.btn .btn_dark{
     background-color:#080B12 ;
     border: 1px solid white;
     border-radius: 25px;
     padding: 0.5rem 2rem;
 }
-main .header_fix .btn a{
+.btn a{
     color: white;
 }
-main .menu ul {
-    list-style:none;
-    text-align: center;
+.music{
+    height: calc(100% - 70px);
+    overflow-y: auto;
 }
-main .menu ul li{
-    display: inline-block;
-    padding: 1rem 1rem 0.2rem 1rem;
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
-main .menu ul li a{
-    color: #7D7F84;
+.album{
+    width: calc(100% / 2 - 1rem);
+    aspect-ratio: 1 / 1;
+    background-color: aquamarine;
 }
-/*footer*/
-#site_footer{
+/* /.content */
+
+
+/* player */
+.player{
     height: 80px;
     background-color: #282828;
+}
+/* /.player */
+
+/* Rsponsive */
+
+@media screen and (min-width: 568px) {
+    .sidebar{
+        width: 240px;
+        ;
+    }
+    .sidebar_logo .logo{
+        display: inline-block;
+    }
+    .sidebar_logo .logo_mobile{
+        display: none;
+    }
+    .menu span{
+        display: inline-block;
+    }
+    .home{
+        border-left: 3px solid #ADFF2F;
+    }
+    .playlist_wrapper{
+        display: inline-block;
+    }
+    .sidebar_bottom span{
+        display: inline-block;
+    }
+    hr{
+        display: inline-block;
+    }
+}
+@media screen and (min-width: 768px) {
+    .album {
+        width: calc(100% / 4 - 1rem);
+        ;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .album {
+        width: calc(100% / 6 - 1rem);
+        ;
+    }
 }
