@@ -47,6 +47,7 @@ a{
 /* sidebar_top */
 .sidebar_top{
     color: #6D6D6D;
+    font-weight: bold;
 }
 .sidebar_logo{
     padding: 1rem 1.5rem;
@@ -131,6 +132,7 @@ ul .menu{
 .sidebar_bottom{
     padding-left: 1.5rem;
     color: #6D6D6D;
+    font-weight: bold;
 }
 .sidebar_bottom ul{
     list-style: none;
@@ -238,19 +240,11 @@ nav ul li a{
     aspect-ratio: 1 / 1;
     text-align: center;
     cursor: pointer;
-    position: relative;
 }
 .album img:hover{
     filter: opacity(30%);;
 }
-.album i{
-    font-size: 60px;
-    color: white;
-    position: absolute;
-    top:100px;
-    left: 100px;
-    display: none;
-}
+
 
 .album i:hover{
     display:inline;
@@ -280,6 +274,54 @@ nav ul li a{
 .player{
     height: 80px;
     background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.album_details, .audio{
+    flex-grow: 1;
+    padding-left: 1rem;
+}
+.controls{
+    flex-grow: 4;
+}
+.album_details{
+    display: flex;
+    align-items: center;
+}
+.album_details .song{
+    display: flex;
+    align-items: center;
+}
+.album_details .song .info{
+    margin-left: 0.5rem;
+}
+.album_details .song h4{
+    color: white;
+}
+.album_details .song p{
+    color: #7D7F84;
+    font-weight: bold;
+}
+.album_details .song h4:hover{
+    color: white;
+    cursor: pointer;
+}
+.album_details .song p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.album_details .icons{
+    font-size: 20px;
+    color: #7D7F84;
+    padding-left: 2rem;
+}
+.album_details .icons i{
+    padding-right: 1rem;
+}
+.album_details .icons i:hover{
+    color: white;
+    cursor: pointer;
 }
 /* /.player */
 
