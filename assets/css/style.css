@@ -330,6 +330,59 @@ nav ul li a{
 /* /.controls */
 
 /* audio */
+.audio{
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.audio .icons{
+    flex-grow: 1;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    
+}
+.audio .icons i{
+    padding-right: 0.5rem;
+}
+.audio .icons i:hover{
+    cursor: pointer;
+}
+.audio .volum{
+    position: relative;
+    padding-left: 1rem;
+    flex-grow: 2;
+    width: 50%;
+    height: 5px;
+    background-color: #7D7F84;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.audio .volum .color_volum{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 5px;
+    border-radius: 20px;
+    background-color: #C1C1C1;
+    justify-content:end;
+    align-items: center;
+}
+.color_volum .circle_volum{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.audio .volum:hover .color_volum{
+    background-color: #ADFF2F;
+    cursor: pointer;
+}
+.audio .volum:hover .circle_volum{
+    background-color: white;
+}
+
 /* /.audio */
 
 /* /.player */
@@ -367,6 +420,9 @@ nav ul li a{
     .album {
         width: calc(100% / 4 - 1rem);
         ;
+    }
+    .album_details .icons{
+        display: flex;
     }
 }
 
