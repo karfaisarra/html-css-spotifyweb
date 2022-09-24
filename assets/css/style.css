@@ -279,7 +279,10 @@ nav ul li a{
     align-items: center;
 }
 /* album_details */
-.album_details, .audio{
+.album_details{
+    padding-left: 1rem;
+}
+.audio{
     flex-grow: 1;
     padding-left: 1rem;
 }
@@ -327,6 +330,74 @@ nav ul li a{
 /* /.album_details */
 
 /* controls */
+.controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.controls_icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+}
+.controls_icons i{
+    padding: 0 2rem;
+    cursor: pointer;
+}
+.controls_icons .circle_play{
+    font-size: 30px;
+}
+.controls_icons .circle_play:hover{
+    font-size: 33px;
+    cursor: pointer;
+}
+
+.controls .audio_player{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 50%;
+}
+.controls .audio_player .center{
+    flex-grow: 1;
+    width: 30%;
+    height: 5px;
+    border-radius: 20px;
+    background-color: #5A5A5A;
+    position: relative;
+    cursor: pointer;
+}
+.audio_player .center .color_center{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 5px;
+    border-radius: 20px;
+    background-color: #C1C1C1;
+    justify-content:end;
+    align-items: center;
+}
+.audio_player .center .circle_center{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+} 
+.audio_player .center:hover .color_center{
+    background-color: #ADFF2F;
+}
+.audio_player .center:hover .circle_center{
+    background-color: white;
+}
+
+.left, .right{
+    padding: 0 2.5rem;
+    color: white;
+}
+
 /* /.controls */
 
 /* audio */
@@ -355,7 +426,7 @@ nav ul li a{
     flex-grow: 2;
     width: 50%;
     height: 5px;
-    background-color: #7D7F84;
+    background-color: #5A5A5A;
     border-radius: 20px;
     cursor: pointer;
 }
